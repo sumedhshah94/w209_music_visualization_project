@@ -1,12 +1,7 @@
-# lab_2
+# w209_final_project
 
 
-The final project for MIDS w203. In this lab, students will apply what they have learned about building linear models 
-to produce a report that analyzes a specific research question. 
-
-# Assignment Prompt
-
-The assignment prompt is in `./assignment.Rmd` and the linked `./assignment.html` file. 
+The final project for MIDS w209. 
 
 # Project Organization
 
