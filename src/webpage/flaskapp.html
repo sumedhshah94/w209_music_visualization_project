@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<script>
+    function overviewHandler(i) {
+        var container = document.getElementById("instructions");
+        for (child in Array.from(container.children)){
+            Array.from(container.children)[child].hidden = true
+
+        }
+        Array.from(container.children)[i].hidden = false
+
+        var buttons = document.getElementById("buttons");
+        for (child in Array.from(buttons.children)){
+            Array.from(buttons.children)[child].style.backgroundColor="aliceblue";
+            Array.from(buttons.children)[child].style.color="#3f2c5a"
+        }
+        Array.from(buttons.children)[i].style.backgroundColor="#d39355";
+        Array.from(buttons.children)[i].style.color="aliceblue";
+    }
+</script>
+<style>
+    body {
+        /* background-color: #412b59; */
+        text-align: center;
+        font-family: 'Helvetica','Arial', sans-serif;
+        background-image: url("https://i.imgur.com/Ph5Gc4p.png");
+    }
+    h2 {
+        text-align:center;
+        font-family: 'Helvetica','Arial', sans-serif;
+        color:aliceblue
+    }
+    p {
+        font-family: 'Helvetica','Arial', sans-serif;
+        color:aliceblue;
+        width:50%;
+    }
+    .intro{
+        font-family: 'Helvetica','Arial', sans-serif;
+        color:aliceblue; 
+        width:100%;
+    }
+    ul {
+        width:50%;
+    }
+    li {
+        text-align:left;
+        font-family: 'Helvetica','Arial', sans-serif;
+        color:aliceblue;
+        list-style: circle outside;
+    }
+    button {
+        background-color: aliceblue;
+        font-family: 'Helvetica','Arial', sans-serif;
+        font-size: large;
+        border-radius:10px ;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .button-center{
+        text-align: center;
+    }
+    .instructions{
+        display:flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .features_key{
+        display:flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+</style>
+<html>
+    <head>
+        <title>
+            Historical Trends in Popular Music
+        </title>
+    </head>
+<body>
+<h2>Historical Trends in Popular Music</h2>
+<p class = "intro"><a class = "intro" href = "https://apps-summer22.ischool.berkeley.edu/w209_spotify_music_nerds/about">About the Creators</a></p>
+<p class="intro"> 
+    Click on the buttons below to get instructions and overview of the dashboards as well as the audio feature key on the far right
+</p>
+<div class="button-center" id="buttons">
+<button onclick="overviewHandler(0)">
+    Audio Features Trend Over Time
+</button>
+<button onclick="overviewHandler(1)">
+    Song Distribution and Popularity
+</button>
+<button onclick="overviewHandler(2)">
+    Song Exploration of Audio Features
+</button>
+<button onclick="overviewHandler(3)">
+    Audio Features Trend of Hit vs Non-Hit Songs
+</button>
+<button onclick="overviewHandler(4)">
+    Audio Feature Key
+</button>
+</div>
+<div class = "instructions" id = "instructions">
+<p hidden>
+    To understand how different audio features of songs have trended over time, use the Genre dropdown and/or the Song Year slider to filter the data based on desired values. The radar chart shows the average values of danceability, acousticness, energy, liveness, speechiness, and valence in the selected genres and song years. The line charts illustrate the trend of the various audio features for the selected genres and time period. 
+</p>
+<p hidden>
+    To visualize the distribution of songs and song hits released over time, use the Song Year slider to select a specific time period to view the distribution of songs released over time, percentage of songs that were hits, and the genre distribution. Select a genre in the Genre dropdown to highlight the specific genre in the visualizations. 
+</p>
+<p hidden>
+    To explore songs based on their different audio feature values and find similar songs, use the Artist Name dropdown or Search Bar, Genre dropdown, and/or Song Year slider to select a specific artist, genre, and/or time period. Songs are displayed on quadrant charts, with the placement based on the audio feature values. Enter a song name in the Song Name search bar to highlight the specific song in the charts. By hovering over the circles, you can view the song name, artist, genre, and audio feature values of the song. Discover similar songs to your favorites by viewing the nearby circles on the charts.
+</p>
+<p hidden>
+    To better understand how hit songs (Billboard Top 100) differ from non-hit songs over time for different genres, specify a genre from the Genre dropdown and/or a range of years the Song Year slider to view the audio feature trends for hit and non-hit songs. Hover over the lines to view the specific values for the audio feature and song year.
+</p>
+<div hidden>
+    <div class = "features_key">
+        <ul>
+            <li>
+                <strong>Danceability</strong> - describes how suitable a track is for dancing based on a combination of elements like tempo, rhythm, stability on a scale of 0 to 1
+            </li>
+            <li>
+                <strong>Acousticness</strong> - confidence measure between 0 and 1 of whether the track is acoustic
+            </li>
+            <li>
+                <strong>Speechiness</strong> - detects presence of spoken words in a track; Values above 0.66 describe tracks that are probably made entirely of spoken words; Values between 0.33 and 0.66 describe tracks that may contain both music and speech; Values below 0.33 most likely represent music and other non-speech-like tracks
+            </li>
+            <li>
+                <strong>Energy</strong> - represents a perceptual measure of intensity and activity between 0 and 1 where more energetic tracks feel fast, loud, and noisy
+            </li>
+            <li>
+                <strong>Valence</strong> - describes musical positiveness by a track between 0 and 1; tracks with a higher valence sound more positive (e.g. happy, cheerful, euphoric) whereas tracks with low valence sound more negative (e.g. sad, depressed, angry
+            </li>
+            <li>
+                <strong>Liveness</strong> - detects the presence of an audience in the recording on a scale of 0 to 1 
+            </li>
+            <li>
+                <strong>Instrumentalness</strong> - predicts whether a track contains no vocals; “ooh” and “aah” sounds are treated as instrumental in this context and rap/spoken word tracks are clearly “vocal” 
+            </li>
+            <li>
+                <strong>Duration</strong> - length of track/song in minutes
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<br>
+<iframe src="https://public.tableau.com/views/w209FinalProjectCombined-HistoricalTrendsinPopularMusic/Story1?:showVizHome=no&:embed=true"
+ width="100%" height="800"></iframe>
+
+</body></html>

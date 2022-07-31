@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<style>
+    body {
+        /* background-color: #412b59; */
+        text-align:center;
+        font-family: 'Helvetica','Arial', sans-serif;
+        background-image: url("https://i.imgur.com/Ph5Gc4p.png");
+    }
+    h2 {
+        text-align:center;
+        font-family: 'Helvetica','Arial', sans-serif;
+        color:aliceblue
+    }
+    p {
+        text-align: center;
+        font-family: 'Helvetica','Arial', sans-serif;
+        color:aliceblue;
+        width:50%
+    }
+    .images {
+        display: flex;
+        height:fit-content;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contributor-image {
+        height:400px;
+    }
+    .caption {
+        display: block;
+        text-align: center;
+        color: aliceblue;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .image-container {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .name-link{
+        color:aliceblue;
+    }
+    .about{
+        display:flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .intro{
+        font-family: 'Helvetica','Arial', sans-serif;
+        color:aliceblue; 
+        width:100%;
+    }
+</style>
+<html>
+    <head>
+        <title>
+            Historical Trends in Popular Music
+        </title>
+    </head>
+<body>
+<h2>About Our Project</h2>
+<div class = "about">
+<p> 
+    We created this project for both record producers and everyday music lovers to visualize music over time. We wanted to visualize how audio features and music genres have changed throughout the years and also understand how it might differ from popular songs. We encourage you to use our dashboards and visualizations to explore music and identify songs that are similar to your favorites.  
+</p>
+<p> 
+    We utilized a dataset of Spotify songs from 1980 to 2020, which includes information about the song, artist, and audio features like danceability, valence, and acousticness. We also leveraged the Billboard Top 100 Chart data to identify which songs were popular hits.
+</p>
+</div>
+<h2> About the Team </h2>
+<div class = 'images' id = 'images'>
+    <div class = "image-container">
+        <img class="contributor-image" src="https://ca.slack-edge.com/T0WA5NWKG-U026578PXFS-2ae7e9be31c9-512" alt="Anstonia Ma" loading="lazy">
+        <span class="caption"><a href="mailto:anstonia@ischool.berkeley.edu" class="name-link">Anstonia Ma</a></span> 
+    </div>
+
+    <div class = "image-container">
+        <img class="contributor-image" src="https://ca.slack-edge.com/T0WA5NWKG-U014NS49WUW-d98b5236bcc5-512" alt="Sumedh Shah" loading="lazy">
+        <span class="caption"><a href="mailto:sumedh.shah@ischool.berkeley.edu" class="name-link">Sumedh Shah</a></span> 
+    </div>
+
+    <div class = "image-container">
+        <img class="contributor-image" src="https://ca.slack-edge.com/T0WA5NWKG-U01C3TR78AW-9e420ef898b9-512" alt="Esther Chen" loading="lazy">
+        <span class="caption"><a href="mailto:yuqiaochen@ischool.berkeley.edu" class="name-link">Esther Chen</a></span>  
+    </div>
+
+    <div class = "image-container">
+        <img class="contributor-image" src="https://ca.slack-edge.com/T0WA5NWKG-U01L14FHYMS-d0a264957daa-512" alt="Amanda Ly" loading="lazy">
+        <span class="caption"><a href="mailto:amandaly@ischool.berkeley.edu" class="name-link">Amanda Ly</a></span>  
+    </div>   
+</div>
+<br>
+<p class = "intro"><a class = "intro" href = "https://apps-summer22.ischool.berkeley.edu/w209_spotify_music_nerds/">Back to the project</a></p>
+</body>
+</html>
