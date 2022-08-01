@@ -12,12 +12,10 @@ We utilized a dataset of Spotify songs from 1980 to 2020, which includes informa
     ├── data
     │   ├── external       <- Data from third party sources.
     │   ├── interim        <- Intermediate data that has been transformed.
-    │   └── processed      <- The final, canonical data sets for modeling.
-    ├── notebooks          <- .Rmd notebooks. 
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │   └── processed      <- The final data set.
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     └── src                <- Source code for use in this project.
-        └── data           <- Scripts to download or generate data
-
+        └── data           <- Scripts to download or generate data.
+        └── webpage        <- Python and HTML code used to generate webpage.
 
 Repository structured based on [cookiecutter data science](https://drivendata.github.io/cookiecutter-data-science).
