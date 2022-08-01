@@ -5,6 +5,8 @@ The final project for MIDS w209. We created this project for both record produce
 
 We utilized a dataset of Spotify songs from 1980 to 2020, which includes information about the song, artist, and audio features like danceability, valence, and acousticness. We also leveraged the Billboard Top 100 Chart data to identify which songs were popular hits.
 
+Website: https://apps-summer22.ischool.berkeley.edu/w209_spotify_music_nerds/ 
+
 # Project Organization
 
     ├── LICENSE
